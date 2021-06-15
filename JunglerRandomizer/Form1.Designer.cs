@@ -38,10 +38,10 @@ namespace JunglerRandomizer
         private System.Windows.Forms.Button buttonAP;
         private System.Windows.Forms.Button buttonTank;
         private System.Windows.Forms.Button buttonRND;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label labelResult;
         private System.Windows.Forms.Button buttonReset;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.PictureBox pictureChamp;
+        private System.Windows.Forms.Button buttonClose;
     }
 }
 

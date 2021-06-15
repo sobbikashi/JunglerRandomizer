@@ -13,17 +13,38 @@ namespace JunglerRandomizer
             InitializeComponent();
         }
 
+        public static string DetermineChampion(int i)
+        {
+            int I = i;
+            switch (I)
+            {
+                case 1: return "Hecarim";
+                case 2: return "Kha'Zix";
+                case 3: return "Kindret";
+                case 4: return "Nocturne";
+                case 5: return "Olaf";
+                case 6: return "Vi";
+                case 7: return "Xin-Zhao";
+                case 8: return "Elise";
+                case 9: return "Evelynn";
+                case 10: return "Warwick";
+                case 11: return "Sejuani";
+                case 12: return "Trundle";
+            }
+            return "Ваш результат";
+
+        }
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.buttonAD = new System.Windows.Forms.Button();
-            this.buttonAP = new System.Windows.Forms.Button();
-            this.buttonTank = new System.Windows.Forms.Button();
-            this.buttonRND = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.labelResult = new System.Windows.Forms.Label();
-            this.buttonReset = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label1 = new Label();
+            this.buttonAD = new Button();
+            this.buttonAP = new Button();
+            this.buttonTank = new Button();
+            this.buttonRND = new Button();
+            this.pictureBox1 = new PictureBox();
+            this.labelResult = new Label();
+            this.buttonReset = new Button();
+            this.textBox1 = new TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -44,7 +65,7 @@ namespace JunglerRandomizer
             this.buttonAD.TabIndex = 1;
             this.buttonAD.Text = "АД";
             this.buttonAD.UseVisualStyleBackColor = true;
-            this.buttonAD.Click += new System.EventHandler(this.buttonAD_Click);
+            this.buttonAD.Click += new EventHandler(this.buttonAD_Click);
             // 
             // buttonAP
             // 
@@ -54,7 +75,7 @@ namespace JunglerRandomizer
             this.buttonAP.TabIndex = 2;
             this.buttonAP.Text = "АП";
             this.buttonAP.UseVisualStyleBackColor = true;
-            this.buttonAP.Click += new System.EventHandler(this.buttonAP_Click_1);
+            this.buttonAP.Click += new EventHandler(this.buttonAP_Click_1);
             // 
             // buttonTank
             // 
@@ -64,7 +85,7 @@ namespace JunglerRandomizer
             this.buttonTank.TabIndex = 3;
             this.buttonTank.Text = "Танк";
             this.buttonTank.UseVisualStyleBackColor = true;
-            this.buttonTank.Click += new System.EventHandler(this.buttonTank_Click_1);
+            this.buttonTank.Click += new EventHandler(this.buttonTank_Click_1);
             // 
             // buttonRND
             // 
@@ -74,7 +95,7 @@ namespace JunglerRandomizer
             this.buttonRND.TabIndex = 4;
             this.buttonRND.Text = "Ю";
             this.buttonRND.UseVisualStyleBackColor = true;
-            this.buttonRND.Click += new System.EventHandler(this.buttonRND_Click_1);
+            this.buttonRND.Click += new EventHandler(this.buttonRND_Click_1);
             // 
             // pictureBox1
             // 
@@ -101,7 +122,7 @@ namespace JunglerRandomizer
             this.buttonReset.TabIndex = 7;
             this.buttonReset.Text = "Сброс";
             this.buttonReset.UseVisualStyleBackColor = true;
-            this.buttonReset.Click += new System.EventHandler(this.buttonReset_Click_1);
+            this.buttonReset.Click += new EventHandler(this.buttonReset_Click_1);
             // 
             // textBox1
             // 
@@ -132,31 +153,31 @@ namespace JunglerRandomizer
         private void buttonAD_Click(object sender, EventArgs e)
         {
             chosenNumber = r.Next(8);
-            labelResult.Text = chosenNumber.ToString();
+            labelResult.Text = DetermineChampion(chosenNumber);
         }                
 
         private void buttonAP_Click_1(object sender, EventArgs e)
         {
             chosenNumber = r.Next(8, 10);
-            labelResult.Text = chosenNumber.ToString();
+            labelResult.Text = DetermineChampion(chosenNumber);
         }
 
         private void buttonTank_Click_1(object sender, EventArgs e)
         {
             chosenNumber = r.Next(10, 13);
-            labelResult.Text = chosenNumber.ToString();
+            labelResult.Text = DetermineChampion(chosenNumber);
         }
 
         private void buttonRND_Click_1(object sender, EventArgs e)
         {
             chosenNumber = r.Next(13);
-            labelResult.Text = chosenNumber.ToString();
+            labelResult.Text = DetermineChampion(chosenNumber);
         }
 
         private void buttonReset_Click_1(object sender, EventArgs e)
         {
             chosenNumber = 0;
-            labelResult.Text = chosenNumber.ToString();
+            labelResult.Text = DetermineChampion(chosenNumber);
         }
     }
 }

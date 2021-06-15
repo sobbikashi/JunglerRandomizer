@@ -106,110 +106,109 @@ namespace JunglerRandomizer
         }
         private void InitializeComponent()
         {
-            this.label1 = new Label();
-            this.buttonAD = new Button();
-            this.buttonAP = new Button();
-            this.buttonTank = new Button();
-            this.buttonRND = new Button();
-            this.labelResult = new Label();
-            this.buttonReset = new Button();
-            this.pictureChamp = new PictureBox();
-            this.buttonClose = new Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.buttonAD = new System.Windows.Forms.Button();
+            this.buttonAP = new System.Windows.Forms.Button();
+            this.buttonTank = new System.Windows.Forms.Button();
+            this.buttonRND = new System.Windows.Forms.Button();
+            this.labelResult = new System.Windows.Forms.Label();
+            this.buttonReset = new System.Windows.Forms.Button();
+            this.pictureChamp = new System.Windows.Forms.PictureBox();
+            this.buttonClose = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureChamp)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new Point(128, 41);
+            this.label1.Location = new System.Drawing.Point(128, 41);
             this.label1.Name = "label1";
-            this.label1.Size = new Size(130, 15);
+            this.label1.Size = new System.Drawing.Size(130, 15);
             this.label1.TabIndex = 0;
             this.label1.Text = "Какой лесник нужен??";
             // 
             // buttonAD
             // 
-            this.buttonAD.Location = new Point(33, 92);
+            this.buttonAD.Location = new System.Drawing.Point(33, 92);
             this.buttonAD.Name = "buttonAD";
-            this.buttonAD.Size = new Size(75, 23);
+            this.buttonAD.Size = new System.Drawing.Size(75, 23);
             this.buttonAD.TabIndex = 1;
             this.buttonAD.Text = "АД";
             this.buttonAD.UseVisualStyleBackColor = true;
-            this.buttonAD.Click += new EventHandler(this.buttonAD_Click);
+            this.buttonAD.Click += new System.EventHandler(this.buttonAD_Click);
             // 
             // buttonAP
             // 
-            this.buttonAP.Location = new Point(114, 92);
+            this.buttonAP.Location = new System.Drawing.Point(114, 92);
             this.buttonAP.Name = "buttonAP";
-            this.buttonAP.Size = new Size(75, 23);
+            this.buttonAP.Size = new System.Drawing.Size(75, 23);
             this.buttonAP.TabIndex = 2;
             this.buttonAP.Text = "АП";
             this.buttonAP.UseVisualStyleBackColor = true;
-            this.buttonAP.Click += new EventHandler(this.buttonAP_Click_1);
+            this.buttonAP.Click += new System.EventHandler(this.buttonAP_Click_1);
             // 
             // buttonTank
             // 
-            this.buttonTank.Location = new Point(195, 92);
+            this.buttonTank.Location = new System.Drawing.Point(195, 92);
             this.buttonTank.Name = "buttonTank";
-            this.buttonTank.Size = new Size(75, 23);
+            this.buttonTank.Size = new System.Drawing.Size(75, 23);
             this.buttonTank.TabIndex = 3;
             this.buttonTank.Text = "Танк";
             this.buttonTank.UseVisualStyleBackColor = true;
-            this.buttonTank.Click += new EventHandler(this.buttonTank_Click_1);
+            this.buttonTank.Click += new System.EventHandler(this.buttonTank_Click_1);
             // 
             // buttonRND
             // 
-            this.buttonRND.Location = new Point(276, 92);
+            this.buttonRND.Location = new System.Drawing.Point(276, 92);
             this.buttonRND.Name = "buttonRND";
-            this.buttonRND.Size = new Size(75, 23);
+            this.buttonRND.Size = new System.Drawing.Size(75, 23);
             this.buttonRND.TabIndex = 4;
-            this.buttonRND.Text = "Ю";
+            this.buttonRND.Text = "Не важно";
             this.buttonRND.UseVisualStyleBackColor = true;
-            this.buttonRND.Click += new EventHandler(this.buttonRND_Click_1);
+            this.buttonRND.Click += new System.EventHandler(this.buttonRND_Click_1);
             // 
             // labelResult
             // 
             this.labelResult.AutoSize = true;
-            this.labelResult.Location = new Point(156, 374);
+            this.labelResult.Location = new System.Drawing.Point(156, 374);
             this.labelResult.Name = "labelResult";
-            this.labelResult.Size = new Size(60, 15);
+            this.labelResult.Size = new System.Drawing.Size(60, 15);
             this.labelResult.TabIndex = 6;
             this.labelResult.Text = "Результат";
             // 
             // buttonReset
             // 
-            this.buttonReset.Location = new Point(156, 403);
+            this.buttonReset.Location = new System.Drawing.Point(156, 403);
             this.buttonReset.Name = "buttonReset";
-            this.buttonReset.Size = new Size(75, 23);
+            this.buttonReset.Size = new System.Drawing.Size(75, 23);
             this.buttonReset.TabIndex = 7;
             this.buttonReset.Text = "Сброс";
             this.buttonReset.UseVisualStyleBackColor = true;
-            this.buttonReset.Click += new EventHandler(this.buttonReset_Click_1);
+            this.buttonReset.Click += new System.EventHandler(this.buttonReset_Click_1);
             // 
             // pictureChamp
             // 
             this.pictureChamp.ImageLocation = "Images\\non.jpg";
-            this.pictureChamp.Location = new Point(128, 152);
+            this.pictureChamp.Location = new System.Drawing.Point(128, 152);
             this.pictureChamp.Name = "pictureChamp";
-            this.pictureChamp.Size = new Size(142, 200);
-            this.pictureChamp.SizeMode = PictureBoxSizeMode.Zoom;
+            this.pictureChamp.Size = new System.Drawing.Size(142, 200);
+            this.pictureChamp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureChamp.TabIndex = 9;
             this.pictureChamp.TabStop = false;
-            this.pictureChamp.Image = img;
             // 
             // buttonClose
             // 
-            this.buttonClose.Location = new Point(156, 432);
+            this.buttonClose.Location = new System.Drawing.Point(156, 432);
             this.buttonClose.Name = "buttonClose";
-            this.buttonClose.Size = new Size(75, 23);
+            this.buttonClose.Size = new System.Drawing.Size(75, 23);
             this.buttonClose.TabIndex = 10;
             this.buttonClose.Text = "Выход";
             this.buttonClose.UseVisualStyleBackColor = true;
-            this.buttonClose.Click += new EventHandler(this.buttonClose_Click);
+            this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
             // 
             // Form1
             // 
-            this.ClientSize = new Size(381, 469);
+            this.ClientSize = new System.Drawing.Size(381, 469);
             this.Controls.Add(this.buttonClose);
             this.Controls.Add(this.pictureChamp);
             this.Controls.Add(this.buttonReset);
